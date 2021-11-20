@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dotfiles=(.zshrc .tmux.conf)
+dotfiles=(.zshrc .zprofile)
 for file in "${dotfiles[@]}"; do
-  ln -svf $file ~/
+  ln -svf ~/dotfiles/$file ~/
 done
